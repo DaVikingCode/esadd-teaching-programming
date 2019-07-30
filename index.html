@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>ESADD - Introduction à la programmation</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/league.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -25,8 +25,84 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h3>Introduction à la programmation</h3>
+					<p><small>Aymeric LAMBOLEY</small></p>
+					<a target="_blank" href="https://esadd.fr/"><img src="img/esadd.png" /></a>
+					<a target="_blank" href="https://www.davikingcode.com/"><img src="img/davikingcode.png" /></a>
+				</section>
+				<section>
+					<section>
+						<h2>Parcours</h2>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<p>Formation</p>
+						<ul>
+							<li>IUT SRC Montbéliard (ex-MMI)</li>
+							<li>Université de Technologie de Belfort-Montbéliard</li>
+							<li>Les Gobelins, l'école de l'image à Annecy</li>
+						</ul>
+					</section>
+					<section>
+						<p>Professionnel</p>
+						<ul>
+							<li>Développeur Web (Flash)</li>
+							<li>Freelance</li>
+							<li>Da Viking Code</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Da Viking Code</h2>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<p>Société de programmation pour applications interactives et ludiques.</p>
+						<ul>
+							<li>6 programmeurs</li>
+							<li>Jeux videos (mobile, desktop, web)</li>
+							<li>Applications mobiles</li>
+							<li>Installations interactives : VR & AR</li>
+						</ul>
+					</section>
+					<section>
+						<p>Technologies</p>
+						<ul>
+							<li>Unity 3D</li>
+							<li>WebGL - Pixi.js - Three.js</li>
+							<li>Laravel</li>
+							<li>Processing</li>
+							<li>Haxe</li>
+							<li>Adobe AIR</li>
+							<li>Unreal Engine</li>
+						</ul>
+					</section>
+					<section data-background-iframe="https://www.davikingcode.com" data-background-interactive>
+						<div style="position: absolute; width: 10%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<p>Références</p>
+						</div>
+					</section>
+				</section>
+				<section>
+					<h2>Sommaire</h2>
+					<ol>
+						<li>À l'origine, l'algorithmie</li>
+						<li>Les langages</li>
+						<li>Le compilateur</li>
+						<li>Processing</li>
+						<li>Les variables et types</li>
+						<li>Les conditions</li>
+						<li>Les boucles</li>
+						<li>Les tableaux</li>
+						<li>Les functions</li>
+					</ol>
+				</section>
 			</div>
 		</div>
 
@@ -37,6 +113,14 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				transition: 'slide',
+
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
