@@ -76,11 +76,9 @@
 						<ul>
 							<li>Unity 3D</li>
 							<li>WebGL - Pixi.js - Three.js</li>
-							<li>Laravel</li>
+							<li>PHP Laravel - Node.js</li>
 							<li>Processing</li>
 							<li>Haxe</li>
-							<li>Adobe AIR</li>
-							<li>Unreal Engine</li>
 						</ul>
 					</section>
 					<section data-background-iframe="https://www.davikingcode.com" data-background-interactive>
@@ -95,15 +93,14 @@
 						<li>À l'origine, l'algorithmie</li>
 						<li>La programmation, c'est fun</li>
 						<li>Le pseudo code</li>
-						<li>Les langages</li>
-						<li>Le compilateur</li>
-						<li>Processing</li>
 						<li>Les variables et types</li>
 						<li>Les conditions</li>
 						<li>Les boucles</li>
+						<li>Les langages de programmation</li>
+						<li>Le compilateur</li>
+						<li>Processing et Java</li>
 						<li>Les tableaux</li>
 						<li>Les fonctions</li>
-						<li>La priorité des opérateurs</li>
 					</ol>
 				</section>
 				<section>
@@ -152,18 +149,115 @@
 				<section data-background-iframe="https://davikingcode.com/cours/POO/examples/gravity.html" data-background-interactive></section>
 
 				<section>
+					<h2>Le pseudo code</h2>
+					<p class="fragment">Il permet avec un crayon et une feuille de papier d'écrire des algorithmes.</p>
+					<p class="fragment">Aucune syntaxe / convention officielle.</p>
+				</section>
+
+				<section>
 					<section>
-						<h2>Le pseudo code</h2>
+						<h2>Les variables et types</h2>
 						<a href="#" class="navigate-down">
 							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
 						</a>
 					</section>
 					<section>
-						<h2>Le pseudo code</h2>
-						<p class="fragment">Il permet avec un crayon et une feuille de papier d'écrire des algorithmes.</p>
-						<p class="fragment">Aucune syntaxe officielle.</p>
+						<h2>Qu'est-ce qu'une variable ?</h2>
+						<p class="fragment">Une variable est un espace de stockage, temporaire, d'une donnée.</p>
+						<p class="fragment">Elles n'existent que pendant la durée d'exécution de notre programme.</p>
+						<p class="fragment">Elles sont utilisées afin de sauvegarder temporairement un résultat.</p>
+					</section>
+					<section>
+						<h2>Exercice 1</h2>
+						<p class="fragment">Quelles seront les valeurs des variables A et B après exécution des instructions suivantes ?</p>
+						<pre class="fragment"><code>Variables A, B en Entier
+Début
+A ← 1
+B ← A + 3
+A ← 3
+Fin</code></pre>
+						<pre class="fragment"><code>A = 3	B = 4</code></pre>
+					</section>
+					<section>
+						<h2>Exercice 2</h2>
+						<p class="fragment">Quelles seront les valeurs des variables A, B et C après exécution des instructions suivantes ?</p>
+						<pre class="fragment"><code>Variables A, B, C en Entier
+Début
+A ← 5
+B ← 3
+C ← A + B
+A ← 2
+C ← B – A
+Fin</code></pre>
+						<pre class="fragment"><code>A = 2	B = 3	C = -1</code></pre>
+					</section>
+					<section>
+						<h2>Exercice 3</h2>
+						<p class="fragment">Quelles seront les valeurs des variables A et B après exécution des instructions suivantes ?</p>
+						<pre class="fragment"><code>Variables A, B en Entier
+Début
+A ← 5
+B ← A + 4
+A ← A + 1
+B ← A – 4
+Fin</code></pre>
+						<pre class="fragment"><code>A = 6	B = 2</code></pre>
+					</section>
+					<section>
+						<h2>Exercice 4</h2>
+						<p class="fragment">Quelles seront les valeurs des variables A, B et C après exécution des instructions suivantes ?</p>
+						<pre class="fragment"><code>Variables A, B, C en Entier
+Début
+A ← 3
+B ← 10
+C ← A + B
+B ← A + B
+A ← C
+Fin</code></pre>
+						<pre class="fragment"><code>A = 13	B = 13	C = 13</code></pre>
+					</section>
+					<section>
+						<h2>Exercice 5</h2>
+						<p class="fragment">Quelles seront les valeurs des variables A et B après exécution des instructions suivantes ?</p>
+						<pre class="fragment"><code>Variables A, B en Entier
+Début
+A ← 5
+B ← 2
+A ← B
+B ← A
+Fin</code></pre>
+						<pre class="fragment"><code>A = 2	B = 2</code></pre>
+					</section>
+					<section>
+						<h2>Exercice 6</h2>
+						<p class="fragment">Écrire un algorithme permettant d’échanger les valeurs de deux variables A et B, et ce quel que soit leur contenu préalable.</p>
+						<pre class="fragment"><code>Début
+...
+C ← A
+A ← B
+B ← C
+Fin</code></pre>
+						<p class="fragment">Création d'une variable temporaire C.</p>
+					</section>
+					<section>
+						<h2>Exercice 7</h2>
+						<p class="fragment">On dispose de trois variables A, B et C. Ecrivez un algorithme transférant à B la valeur de A, à C la valeur de B et à A la valeur de C (toujours quels que soient les contenus préalables de ces variables).</p>
+						<pre class="fragment"><code>Début
+...
+D ← C
+C ← B
+B ← A
+A ← D
+Fin</code></pre>
+						<p class="fragment">Une seule variable temporaire suffit...</p>
+					</section>
+					<section>
+							<h2>Qu'est-ce qu'un type ?</h2>
+							<p class="fragment"></p>
 					</section>
 				</section>
+				
+
 			</div>
 		</div>
 
