@@ -252,8 +252,69 @@ Fin</code></pre>
 						<p class="fragment">Une seule variable temporaire suffit...</p>
 					</section>
 					<section>
-							<h2>Qu'est-ce qu'un type ?</h2>
-							<p class="fragment"></p>
+						<h2>Qu'est-ce qu'un type ?</h2>
+						<table class="fragment">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Exemple</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Entier</td>
+									<td>5</td>
+								</tr>
+								<tr>
+									<td>Réel</td>
+									<td>-2.75</td>
+								</tr>
+								<tr>
+									<td>Chaîne de caractères</td>
+									<td>"hello world"</td>
+								</tr>
+								<tr>
+									<td>Booléen</td>
+									<td>true</td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="fragment">Un type permet de préciser le contenu attendu dans une variable.</p>
+						<p class="fragment">En général on effectue des opérations avec des variables de même type.</p>
+					</section>
+					<section>
+						<h2>Exercice 8</h2>
+						<p class="fragment">Quelle sera la valeur de la variables A après exécution des instructions suivantes ?</p>
+						<pre class="fragment"><code>Variables A Entier, B Chaîne de caractère
+Début
+A ← 5
+B ← "2"
+A ← A + B
+Fin</code></pre>
+						<pre class="fragment"><code>A = "52"</code></pre>
+					</section>
+					<section>
+						<h2>Exercice 9</h2>
+						<p class="fragment">Écrire un programme qui lit le prix HT d’un article, le nombre d’articles et le taux de TVA, et qui fournit le prix total TTC correspondant. Faire en sorte que des libellés apparaissent clairement.</p>
+						<pre class="fragment"><code>Variables nb, pht, ttva en Réel
+Début
+Ecrire "Entrez le prix hors taxes :"
+Lire pht
+Ecrire "Entrez le nombre d’articles :"
+Lire nb
+Ecrire "Entrez le taux de TVA :"
+Lire ttva
+Ecrire "Le prix toutes taxes est : " + (nb * pht * (1 + ttva))
+Fin</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Les conditions</h2>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
 					</section>
 				</section>
 				
