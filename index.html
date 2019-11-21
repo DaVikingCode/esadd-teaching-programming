@@ -316,6 +316,88 @@ Fin</code></pre>
 							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
 						</a>
 					</section>
+					<section>
+						<h2>Les conditions</h2>
+						<p class="fragment">Difficile d'imaginer des algorithmes complexes dont le déroulé serait identique en toute circonstance.</p>
+						<p class="fragment">Un bon algorithme doit être capable de s'adapter à des <b>variables</b> durant son exécution.</p>
+						<p class="fragment">La solution est d'ajouter des <b>instructions conditionelles</b> qui vont effectuer des <b>tests</b> à des moments clefs de notre programme.</p>
+						<p class="fragment">Si... <span class="fragment">alors...</span> <span class="fragment">sinon...</span></p>
+					</section>
+					<section>
+						<h2>Exercice 1</h2>
+						<p class="fragment">La machine choisit aléatoirement soit 0 soit 1. Faire un programme qui lit un chiffre en entrée et détermine si c'est le bon.</p>
+						<pre class="fragment"><code>Variables nbrToFind, saisie en Réel
+Début
+nbrToFind ← Aléatoire(0, 1)
+Lire saisie
+Si saisie = nbrToFind
+	Ecrire "Correct"
+Sinon
+	Ecrire "Incorrect"
+FinSi
+Fin</code></pre>
+					</section>
+					<section>
+						<h2>Exercice 2</h2>
+						<p class="fragment">La machine tire un nombre entre 0 et 100. Écrire un algorithme qui vous permet de déterminer ce nombre.</p>
+						<pre class="fragment"><code>Variables nbrToFind, saisie, min, max en Réel
+nbrToFind ← 42
+min ← 0
+max ← 100
+Lire saisie
+Si saisie = nbrToFind
+	Ecrire "Le nombre a trouvé était bien : " + nbrToFind
+Sinon
+	Si saisie < nbrToFind
+		min ← saisie
+	Sinon saisie > nbrToFind
+		max ← saisie
+	FinSi
+	Ecrire "L'intervalle est désormais compris entre : " + min + " et " + max
+FinSi</code></pre>
+					</section>
+					<section>
+						<h2>Exercice 3</h2>
+						<p class="fragment">Vous pensez à un chiffre entre 0 et 100 la machine doit le deviner. Répondez lui par "+", "-", ou "=".</p>
+						<pre class="fragment"><code>Variables min, max, estimatedNbr en Réel, saisie en Chaîne de caractères
+min ← 0
+max ← 100
+estimatedNbr ← ((min + max) / 2)
+Ecrire "Le nombre est : " + estimatedNbr
+Lire saisie
+Si saisie = "="
+	Ecrire "J'ai gagné !"
+Sinon si saisie = "+"
+	min ← estimatedNbr + 1
+Sinon si saisie = "-"
+	max ← estimatedNbr - 1
+FinSi</code></pre>
+					</section>
+					<section>
+						<h2>Exercice 4</h2>
+						<p class="fragment">Les habitants de Zorglub paient l’impôt selon les règles suivantes :</p>
+						<ul>
+							<li class="fragment">les hommes de plus de 20 ans paient l’impôt</li>
+							<li class="fragment">les femmes paient l’impôt si elles ont entre 18 et 35 ans</li>
+							<li class="fragment">les autres ne paient pas d’impôt</li>
+						</ul>
+						<p class="fragment">Le programme demandera donc l’âge et le sexe du Zorglubien, et se prononcera donc ensuite sur le fait que l’habitant est imposable.</p>
+					</section>
+					<section>
+						<h2>Exercice 4 - corrigé</h2>
+						<pre class="fragment"><code>Variables sex en Caractères, age en Entier,
+Début
+Ecrire "Entrez le sexe (M/F) : "
+Lire sex
+Ecrire "Entrez l’âge : "
+Lire age
+Si ((sex = "M" ET age > 20) OU (sex = "F" ET (age >= 18 ET age <= 35)))
+	Ecrire "Imposable"
+Sinon
+	Ecrire "Non Imposable"
+FinSi
+Fin</code></pre>
+					</section>
 				</section>
 				
 
