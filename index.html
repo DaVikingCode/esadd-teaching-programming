@@ -363,17 +363,15 @@ FinSi</code></pre>
 						<h2>Exercice 3</h2>
 						<p class="fragment">Vous pensez à un chiffre entre 0 et 100 la machine doit le deviner. Répondez lui par "+", "-", ou "=".</p>
 						<pre class="fragment"><code>Variables min, max, estimatedNbr en Réel, saisie en Chaîne de caractères
-min ← 0
-max ← 100
-estimatedNbr ← ((min + max) / 2)
+estimatedNbr ← 50
 Ecrire "Le nombre est : " + estimatedNbr
 Lire saisie
 Si saisie = "="
 	Ecrire "J'ai gagné !"
 Sinon si saisie = "+"
-	min ← estimatedNbr + 1
+	estimatedNbr ← estimatedNbr + 1
 Sinon si saisie = "-"
-	max ← estimatedNbr - 1
+	estimatedNbr ← estimatedNbr - 1
 FinSi</code></pre>
 					</section>
 					<section>
