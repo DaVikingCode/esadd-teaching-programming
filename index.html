@@ -387,13 +387,13 @@ FinSi</code></pre>
 					</section>
 					<section>
 						<h2>Exercice 4 - corrigé</h2>
-						<pre class="fragment"><code>Variables sex en Caractères, age en Entier,
+						<pre class="fragment"><code>Variables sex en Chaîne de caractères, age en Entier,
 Début
 Ecrire "Entrez le sexe (M/F) : "
 Lire sex
 Ecrire "Entrez l’âge : "
 Lire age
-Si ((sex = "M" ET age > 20) OU (sex = "F" ET (age >= 18 ET age <= 35)))
+Si ((sex = "M" ET age > 20) OU (sex = "F" ET age >= 18 ET age <= 35))
 	Ecrire "Imposable"
 Sinon
 	Ecrire "Non Imposable"
