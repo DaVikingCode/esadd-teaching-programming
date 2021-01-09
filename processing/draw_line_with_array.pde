@@ -13,16 +13,9 @@ void draw()
 {
   background(0);
   
-  float[] lineColor = new float[3];
-  lineColor[0] = (float)(Math.random() * 255);
-  lineColor[1] = (float)(Math.random() * 255);
-  lineColor[2] = (float)(Math.random() * 255);
+  float[] lineColor = { (float)(Math.random() * 255), (float)(Math.random() * 255), (float)(Math.random() * 255) };
   
-  int[] linePosition = new int[4];
-  linePosition[0] = (int)(Math.random() * width);
-  linePosition[1] = (int)(Math.random() * height);
-  linePosition[2] = mouseX;
-  linePosition[3] = mouseY;
+  int[] linePosition = { (int)(Math.random() * width), (int)(Math.random() * height), mouseX, mouseY };
   
   lineColors[index] = lineColor;
   linePositions[index] = linePosition;
